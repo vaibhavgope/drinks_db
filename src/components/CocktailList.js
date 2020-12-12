@@ -11,13 +11,13 @@ export default function CocktailList() {
   if (drinks.length < 1) {
     return (
       <h2 className='section-title'>
-        no cocktails matched your search criteria
+        no drinks matched your search criteria
       </h2>
     )
   }
   return (
     <section className='section'>
-      <h2 className='section-title'>cocktails</h2>
+      <h2 className='section-title'>drinks</h2>
       <div className='cocktails-center'>
         {drinks.map((item) => {
           return <Cocktail key={item.id} {...item} />
